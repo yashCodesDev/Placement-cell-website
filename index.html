@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Placement cell</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#past-recruit">Past recruiter</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- hero-section-->
+
+        <div class="text-box">
+            <div class="placement-text">
+                <h1>Welcome to the Placement Cell</h1>
+            </div>
+
+            <div>
+                <img src="./images/iic.png" sizes="100%" alt="logo">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col-1">
+                <h3>About IIC</h3>
+                <p>
+                    The Institute of Informatics and Communication, University of Delhi, has evolved into one of the
+                    country's
+                    premier institutions since 1997. It targets fulfilling the increasing demand for trained
+                    professionals in
+                    the Industry. It has been designed by leading academics in the world of computing as well as
+                    communication.
+                    Today, the most recognized need in the world of industry and corporate environment is for an
+                    informatics
+                    professional who understands not only computing and telecommunication technology but also related
+                    software
+                    application. The institute, in its nurturing environment, gives birth to and nourishes the mind that
+                    goes on
+                    to innovate in the field of communications and information technology.
+                </p>
+            </div>
+
+            <div class="col-2">
+                <img src="./images/about.jpg" alt="about">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Past recruiter -->
+
+    <section id="past-recruit">
+        <div class="past-recruit">
+            <h2>Our Past Recruiter</h2>
+            <div class="past-recruiter-1">
+                <div class="past-col">
+                    <img src="./images/past-recruiter.jpg" alt="recruiter">
+                </div>
+                <div class="past-col">
+                    <h1> Internship</h1>
+                    <img src="./images/internship.jpg" alt="internship">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Contact us -->
+
+    <section id="contact">
+        <h1 style="text-align: center; font-size: 36px;">
+            Contact Us
+        </h1>
+        <section class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.5237048808885!2d77.16115651489227!3d28.58406188243682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d11d46ccc85%3A0x2e94d9687f938329!2sInstitute%20of%20Informatics%20and%20Communication%2C%20UDSC!5e0!3m2!1sen!2sin!4v1677681444296!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row1">
+                <!-- <div class="contact-col">
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>lorem</h5>
+                        <p>delhi</p>
+                    </span>
+                </div>
+                <div class="contact-col">
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>lorem</h5>
+                        <p>delhi</p>
+                    </span>
+                </div>
+                <div class="contact-col">
+                    <span>
+                        <h5>placements @iic.ac.in</h5>
+                        <i class="fa fa-envelope-o"></i>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div> -->
+
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                        <textarea placeholder="Message" name="message" rows="8" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+
+
+        </section>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer"> 
+        <h3>University of Delhi</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis maxime consequatur earum quo quaerat <br>
+            eveniet, molestiae quibusdam veritatis veniam provident quas quia incidunt ut adipisci? Reiciendis dolorem
+            nostrum saepe adipisci.</p>
+
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+    </footer>
+
+
+
+
+    <!-- ----Menu javascript---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
